@@ -7,7 +7,7 @@ import Project from "../components/Project";
 import Contact from "../components/Contact";
 import Socials from "../components/Socials";
 import CustomLink from "../components/CustomLink";
-import {MdContactMail} from 'react-icons/md'
+
 // import ContactUs from "../components/ContactUs";
 
 
