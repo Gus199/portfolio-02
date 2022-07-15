@@ -8,6 +8,8 @@ import Modal from "./components/Modal";
 import { Routes, Route } from "react-router-dom";
 import { useModalContext } from "./contexts/ModalContext";
 import Social from "./pages/About";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
 	const { isModal, resetModal, modalContent } = useModalContext();
@@ -24,6 +26,7 @@ function App() {
 				<Route path="*" element={<NotFound />} />
 			</Routes>
 			<Footer />
+			<ToastContainer />
 		</div>
 	);
 }

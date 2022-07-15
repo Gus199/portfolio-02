@@ -1,13 +1,16 @@
 import React, { useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
 import FadeUp from "../animations/FadeUp";
+import { toast } from "react-toastify";
 import { Fade } from "react-awesome-reveal";
 import { Bounce } from "react-awesome-reveal";
 import { useNavigate } from "react-router-dom";
 
 function Contact() {
+	const [success] = useState()
 	const navigate = useNavigate();
 	const [formDisabled, setFormDisabled] = useState(true);
+	
 
 	const [firstName, setFirstName] = useState("");
 	const [lastName, setLastName] = useState("");
@@ -38,17 +41,25 @@ function Contact() {
 		setMessage(e.target.value);
 	};
 
+	useEffect(() => {
+		if(success) {
+		  toast.success('success')
+		
+		}
+		  }, [success])
+
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		console.log("submitted");
-
+	
 		const templateParams = {
 			from_name: `${firstName} ${lastName}`,
 			reply_to: email,
 			message: message,
 			to_name: `${firstName}`
 		};
-
+		
+		 
 		emailjs
 			.send(
 				"service_ie85gfn",
@@ -94,6 +105,8 @@ function Contact() {
 					// }, 5000);
 				}
 			);
+			
+
 		setFirstName("");
 		setLastName("");
 		setEmail("");
