@@ -83,7 +83,7 @@ function Contact() {
 					} else {
 						console.log("something went wrong");
 						// setToastMessage(
-						// 	"Something went wrong...please email me directly at jcq5010@gmail.com."
+						// 	"Something went wrong...please email me directly at amaraitgherbi@gmail.com."
 						// );
 						// setToastType("failure");
 						// setShow(true);
@@ -95,7 +95,7 @@ function Contact() {
 				(err) => {
 					console.log("something went wrong");
 					// setToastMessage(
-					// 	"Something went wrong...please email me directly at jcq5010@gmail.com."
+					// 	"Something went wrong...please email me directly at amaraitgherbi@gmail.com."
 					// );
 					// setToastType("failure");
 					// setShow(true);
