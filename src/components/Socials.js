@@ -3,7 +3,7 @@ import React from "react";
 function Socials() {
 	return (
 		<div className="socials-container-top">
-			<a
+			<div
 				href="https://www.linkedin.com/in/amar-ait-gherbi-203a9821a"
 				target="_blank"
 				rel="noreferrer"
@@ -19,8 +19,8 @@ function Socials() {
 						fill="#BBBBBB"
 					/>
 				</svg>
-			</a>
-			<a
+			</div>
+			<div
 				href="https://github.com/Gus199"
 				target="_blank"
 				rel="noreferrer"
@@ -36,9 +36,9 @@ function Socials() {
 						fill="#BBBBBB"
 					/>
 				</svg>
-			</a>
+			</div>
 			
-			<a href="./images/amar.pdf" target="_blank" rel="noreferrer">
+			<div href="./images/amar.pdf" target="_blank" rel="noreferrer">
 				<svg
 					className="icon"
 					// width="30"
@@ -52,7 +52,7 @@ function Socials() {
 						fill="#C4C4C4"
 					/>
 				</svg>
-			</a>
+			</div>
 		</div>
 	);
 }

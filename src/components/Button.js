@@ -1,13 +1,36 @@
-import React, { useEffect, useState } from "react";
+import React, {useState, useEffect} from 'react'
 import emailjs from "@emailjs/browser";
 import FadeUp from "../animations/FadeUp";
 import { toast } from "react-toastify";
 import { Fade } from "react-awesome-reveal";
 import { Bounce } from "react-awesome-reveal";
 import { useNavigate } from "react-router-dom";
+import {MdOutlineContactPhone} from 'react-icons/md'
 
-function Contact() {
-	const [success] = useState()
+import Modal from 'react-modal'
+// import {FaPlus} from 'react-icons/fa'
+// import Socials from './Socials'
+
+
+
+const customStyles = {
+  content: {
+    padding: '1em 3em',
+    width: '40%',
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
+    borderRadius: '25px',
+    position: 'relative',
+    
+  },
+}
+
+function Button() {
+    const [success] = useState()
 	const navigate = useNavigate();
 	const [formDisabled, setFormDisabled] = useState(true);
 	
@@ -114,14 +137,42 @@ function Contact() {
 		navigate('/work')
 		
 	};
+//   return (
+//     <div class="fixed-btn">
+//     <p>fixed button</p>
+//   </div>
+  
+//   )
+const [modalIsOpen, setModalIsOpen] = useState(false)
+//   const [noteText, setNoteText] = useState('')
 
-	return (
-		<div className="section-container">
-			<FadeUp triggerOnce duration={1000} fraction={0}>
-				<h1 className="section-title">
-					Want to collaborate, have an open role, or just want to get in touch?
-				</h1>
-				<form className="contact-form" onSubmit={handleSubmit}>
+  // Open/close modal
+const openModal = () => setModalIsOpen(true)
+const closeModal = () => setModalIsOpen(false)
+  return (
+<div>
+	{/* <h1>hello</h1>
+  <Socials /> */}
+  {/* <ContactUs /> */}
+ 
+        {/* <MdOutlineContactPhone onClick={openModal} className='fixed-btn' > */}
+        <div onClick={openModal} className='fixed-btn'>
+          < MdOutlineContactPhone className='icons'/>
+          </div>
+        {/* </MdOutlineContactPhone> */}
+   
+  <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        style={customStyles}
+        contentLabel='Add Note'
+      >
+        <h2>Add Note</h2>
+        <button className='btn-close' onClick={closeModal}>
+          X
+        </button>
+        <FadeUp triggerOnce duration={1000} fraction={0}>
+        <form className="contact-form" onSubmit={handleSubmit}>
 				<Fade
 										delay={200}
 										cascade={true}
@@ -175,12 +226,14 @@ function Contact() {
 					</div>
 					</Fade>
 				</form>
-				<Bounce  button delay={1000}>
+                <Bounce  button delay={1000}>
 				<div className="contact-note-container"><p>(or just email me @ <span className="accent-orange-text">amaraitgherbi@gmail.com</span>)</p></div>
 				</Bounce>
-			</FadeUp>
-		</div>
-	);
+                </FadeUp>
+      </Modal>
+  </div>
+  
+  );
 }
 
-export default Contact;
+export default Button

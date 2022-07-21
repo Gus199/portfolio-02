@@ -4,11 +4,12 @@ import FadeUp from "../animations/FadeUp";
 import { Fade } from "react-awesome-reveal";
 import projectData from "../content/content.js";
 import Project from "../components/Project";
-import Contact from "../components/Contact";
+// import Contact from "../components/Contact";
 import Socials from "../components/Socials";
 import CustomLink from "../components/CustomLink";
-
 // import ContactUs from "../components/ContactUs";
+// import ContactUs from "../components/ContactUs";
+import Button from "../components/Button";
 
 
 
@@ -21,6 +22,9 @@ const Home = () => {
 
 	return (
 		<div className="main-container">
+	
+						{/* <ContactUs className="us" /> */}
+					
 			<div className="inner-container">
 				{/* <section className="section-1"> */}
 				<div className="section-container">
@@ -34,7 +38,8 @@ const Home = () => {
 						<h1 className="section-title main-section-title">
 							I'm Amar Ait-Gherbi
 						</h1>
-						<h2 className="sub-title">Front-end developer</h2>
+						
+						<h2 className="sub-title">Full Stack developer</h2>
 						<Socials />
 						{/* <ContactUs /> */}
 						
@@ -85,6 +90,7 @@ const Home = () => {
 				</div>
 				{/* </section> */}
 				{/* <section className="section-2"> */}
+				<Button />
 				<div className="section-container">
 					<FadeUp
 						duration={1000}
@@ -97,22 +103,7 @@ const Home = () => {
 							I'm constantly adding to my toolbox of skills
 						</h1>
 						<div className="skills-container">
-							<p className="skills-description">
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of L
-								{/* The modern web is always changing, so I am always learning. I
-								enjoy fiddling with different tools across the web and finding
-								the right fits for my development style, but I am also
-								versatile. If a job is best served with a certain set of
-								technologies, then I will make sure to take the time and dive
-								deep when necessary. */}
-								<br></br>
-								<br></br>
-								I'm currently teaching myself{" "}
-								<span className="important-text">Nextjs</span>,{" "}
-								<span className="important-text">Figma</span>, and{" "}
-								<span className="important-text">Strapi 
-</span>.
-							</p>
+							
 							<div>
 								<h3 className="what-im-good-at">What I'm good at</h3>
 								<ul className="skill-list">
@@ -142,6 +133,22 @@ const Home = () => {
 									</Fade>
 								</ul>
 							</div>
+							<p className="skills-description">
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of L
+								{/* The modern web is always changing, so I am always learning. I
+								enjoy fiddling with different tools across the web and finding
+								the right fits for my development style, but I am also
+								versatile. If a job is best served with a certain set of
+								technologies, then I will make sure to take the time and dive
+								deep when necessary. */}
+								<br></br>
+								<br></br>
+								I'm currently teaching myself{" "}
+								<span className="important-text">Nextjs</span>,{" "}
+								<span className="important-text">Figma</span>, and{" "}
+								<span className="important-text">Strapi 
+</span>.
+							</p>
 						</div>
 					</FadeUp>
 				</div>
@@ -191,7 +198,7 @@ const Home = () => {
 						</Fade>
 					</div>
 				</div>
-				<Contact />
+				{/* <Contact /> */}
 				{/* </section> */}
 				{/* <section className="section-8"> */}
 
