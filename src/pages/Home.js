@@ -10,6 +10,7 @@ import CustomLink from "../components/CustomLink";
 // import ContactUs from "../components/ContactUs";
 // import ContactUs from "../components/ContactUs";
 import Button from "../components/Button";
+import Social1 from "../components/Social1";
 
 
 
@@ -41,7 +42,8 @@ const Home = () => {
 						</h1>
 						
 						<h2 className="sub-title">Full Stack developer</h2>
-						<Socials />
+						<Social1 />
+						{/* <Socials /> */}
 						{/* <ContactUs /> */}
 						
 						{/* <MdContactMail className="test"/> */}
