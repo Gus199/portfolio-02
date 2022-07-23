@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import FadeUp from "../animations/FadeUp";
-
+import Pulse from "../components/Pulse";
 import { Fade } from "react-awesome-reveal";
 import projectData from "../content/content.js";
 import Project from "../components/Project";
@@ -35,6 +35,7 @@ const Home = () => {
 						cascade={true}
 						damping={0.1}
 					>
+					
 						<h1 className="section-title main-section-title">
 							I'm Amar Ait-Gherbi
 						</h1>
@@ -87,10 +88,15 @@ const Home = () => {
 							
 						</div>
 					</FadeUp>
+					
 				</div>
 				{/* </section> */}
 				{/* <section className="section-2"> */}
-				<Button />
+				
+	
+				
+				{/* <Button /> */}
+				
 				<div className="section-container">
 					<FadeUp
 						duration={1000}

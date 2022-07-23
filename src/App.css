@@ -31,10 +31,47 @@ body,
 	margin: 0;
 	background-color: var(--dark-main);
 }
+/* Navbar Test Css */
 
-/* #root {
-	overflow-y: hidden;
-} */
+.nav-list {
+	position: fixed;
+	background: white;
+	color: var(--dark-main);
+	z-index: 10;
+	box-shadow: 0px 0px 10px var(--clr-gray200);
+	margin: 0;
+	padding: 1rem 0;
+	border-radius: var(--radius);
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 100%;
+}
+.nav-item {
+	list-style: none;
+	margin-right: 2em;
+}
+.nav-item a {
+	text-decoration: none;
+	color: black
+}
+.nav-item:first-child{
+	margin-right: auto;
+	margin-left: 2em;
+	background-color: #dca604;
+}
+/* Social */
+.socials-container-top {
+	display: flex;
+	border: #f5ba09 solid 1px;
+	
+		
+	}
+	
+	.socials-container-top > a {
+		margin-right: 0em;
+		
+	}
 
 h1,
 h2,
@@ -103,7 +140,9 @@ ul {
 }
 
 .main-header {
+	
 	display: flex;
+	justify-self: start;
 	position: fixed;
 	background: white;
 	width: 100%;
@@ -160,6 +199,7 @@ section {
 .main-container {
 
 	padding-top: 3em;
+	/* max-width: fit-content; */
 }
 .us{
 	display:flex;
@@ -227,24 +267,7 @@ section {
 	/* box-shadow: 10px 10px var(--orange-accent); */
 }
 
-.socials-container-top {
-/* border: #f5ba09 solid 1px; */
-	display: flex;
-	margin: 1.8em 20em 0em 20em;
-	/* margin-left: auto; */
 
-	justify-content: center;
-	justify-content: space-between;
-	
-	
-
-
-}
-
-.socials-container-top > a {
-	margin-right: 0em;
-	
-}
 
 /* Skills */
 
@@ -280,6 +303,7 @@ section {
 	align-items: center;
 	justify-content: center;
 	transition: color 150ms ease;
+	max-width: 50%;
 }
 
 /* Projects */
@@ -435,14 +459,30 @@ label {
 }
 
 /* Footer */
+.footer {
+	position: fixed;
+	padding: 5em 1em;
+	/* background-color: var(--light-main); */
+	/* color: var(--dark-main); */
+	color: lightgray;
+	display: flex;
+	justify-content: left;
+	margin-left: 2em;
+	/* position: relative; */
+	bottom: 0;
+	width: 100%;
+	margin-top: 5em;
+	text-align: center;
+}
 .page-footer {
+	position: relative;
 	padding: 5em 1em;
 	/* background-color: var(--light-main); */
 	/* color: var(--dark-main); */
 	color: lightgray;
 	display: flex;
 	justify-content: center;
-	position: relative;
+	/* position: relative; */
 	bottom: 0;
 	width: 100%;
 	margin-top: 5em;
@@ -577,13 +617,22 @@ label {
 	justify-content: center;
 	height: 100vh;
 }
+@media screen and  (max-width: 400px) {
+	
+	.contact-form {
+		max-width: 100%;
+		height: 50%;
+	}
+
+	
+}
 
 @media screen and (min-width: 1150px) {
 	.detail-content-container {
 		width: 75%;
 		padding-top: 2em;
 	}
-
+	
 	.detail-image {
 		width: 40%;
 	}
@@ -619,9 +668,7 @@ label {
 		
 	}
 
-	.main-header {
-		padding: 1em 100em;
-	}
+	
 
 	.inner-container {
 		max-width: 1400px;
@@ -761,3 +808,122 @@ label {
 	  text-align: center;
 
   }
+
+  /* Pulse CSS */
+ 
+  *,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-dark: rgb(13, 17, 19);
+  --clr-light: #fff;
+  --clr-accent: rgb(222, 52, 0);
+  --clr-accent-dark: rgb(163, 38, 0);
+  --clr-secondary: rgb(0, 76, 199);
+  --br: 0.5em;
+  --transition: transform 200ms cubic-bezier(0.21, 1, 0.81, 1);
+}
+
+body {
+  font-family: sans-serif;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background: var(--clr-dark);
+  color: var(--clr-light);
+}
+
+/* h1,
+h2,
+h3,
+p {
+  margin: 0;
+} */
+
+/* img {
+  max-width: 100%;
+}
+.name {
+  font-weight: bold;
+} */
+
+/* .streamers {
+  display: flex;
+  text-align: center;
+} */
+
+/* .streamers img {
+  border-radius: 50%;
+} */
+
+.pulse {
+  width: 3em;
+  height: 3em;
+  /* position: fixed; */
+  transition: transform ease-in-out 150ms;
+  cursor: pointer;
+}
+
+.pulse {
+  transform: translateY(-20%);
+}
+
+.streamer .pulse::before {
+  opacity: 1;
+}
+
+.streamer .pulse {
+  transform: translateY(-20%) scale(1.1);
+}
+
+.pulse::before,
+.pulse::after {
+  opacity: 0;
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: 50%;
+}
+
+.pulse::before {
+  content: "\f04b";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 2em;
+  background: #dca604;
+  display: grid;
+  place-items: center;
+  z-index: 10;
+  transition: opacity 75ms linear, background-color 100ms linear;
+}
+
+.pulse::before {
+  /* background: #cc0202; */
+  background: #f5ba09;
+}
+
+.pulse::after {
+  /* background: #f00; */
+  background-color: #f5ba09;
+  z-index: 1;
+  animation: pulse 1250ms infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.75;
+  }
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}

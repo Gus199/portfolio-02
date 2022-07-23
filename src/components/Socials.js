@@ -3,13 +3,13 @@ import React from "react";
 function Socials() {
 	return (
 		<div className="socials-container-top">
-			<div
+			<a className="icon-1"
 				href="https://www.linkedin.com/in/amar-ait-gherbi-203a9821a"
 				target="_blank"
 				rel="noreferrer"
 			>
 				<svg
-					className="icon"
+					
 					viewBox="0 0 96 92"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
@@ -19,14 +19,14 @@ function Socials() {
 						fill="#BBBBBB"
 					/>
 				</svg>
-			</div>
-			<div
+			</a>
+			<a 
 				href="https://github.com/Gus199"
 				target="_blank"
 				rel="noreferrer"
 			>
 				<svg
-					className="icon"
+					
 					viewBox="0 0 204 199"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
@@ -36,11 +36,11 @@ function Socials() {
 						fill="#BBBBBB"
 					/>
 				</svg>
-			</div>
+			</a>
 			
-			<div href="./images/amar.pdf" target="_blank" rel="noreferrer">
+			<a   href="./images/amar.pdf" target="_blank" rel="noreferrer">
 				<svg
-					className="icon"
+					
 					// width="30"
 					// height="30"
 					viewBox="0 0 300 300"
@@ -52,7 +52,7 @@ function Socials() {
 						fill="#C4C4C4"
 					/>
 				</svg>
-			</div>
+			</a>
 		</div>
 	);
 }
