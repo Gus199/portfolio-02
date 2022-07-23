@@ -58,7 +58,8 @@ body,
 .nav-item:first-child{
 	margin-right: auto;
 	margin-left: 2em;
-	background-color: #dca604;
+	color:#dca604;
+	/* background-color: #dca604; */
 }
 /* Social */
 
