@@ -935,9 +935,9 @@ p {
 }
 
 .pulse::before {
-  content: "\f04b";
+  content: "\f007";
   font-family: "Font Awesome 5 Free";
-  font-weight: 900;
+  font-weight: 500;
   font-size: 2em;
   background: #dca604;
   display: grid;

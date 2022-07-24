@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import FadeUp from "../animations/FadeUp";
-import Pulse from "../components/Pulse";
+// import Pulse from "../components/Pulse";
 import { Fade } from "react-awesome-reveal";
 import projectData from "../content/content.js";
 import Project from "../components/Project";
 // import Contact from "../components/Contact";
-import Socials from "../components/Socials";
+// import Socials from "../components/Socials";
 import CustomLink from "../components/CustomLink";
 // import ContactUs from "../components/ContactUs";
 // import ContactUs from "../components/ContactUs";
-import Button from "../components/Button";
+// import Button from "../components/Button";
 import Social1 from "../components/Social1";
 
 

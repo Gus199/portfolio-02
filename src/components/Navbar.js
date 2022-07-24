@@ -4,22 +4,22 @@ import CustomLink from "./CustomLink";
 
 function Navbar() {
   return (
-    <navbar className='navbar'>
+    <nav className='navbar'>
       <ul className="nav-list">
         <li className="nav-item">
-          <a href="#"><BsCodeSlash /></a>
+          <a  href="#"><BsCodeSlash /></a>
         </li>
         <li className="nav-item">
-          <a href="#"><CustomLink to="/">Home</CustomLink></a>
+          <a ><CustomLink to="/">Home</CustomLink></a>
         </li>
         <li className="nav-item">
-          <a href="#"><CustomLink to="/work">Work</CustomLink></a>
+          <a ><CustomLink to="/work">Work</CustomLink></a>
         </li>
         <li className="nav-item">
-          <a href="#">	<CustomLink to="/about">About</CustomLink></a>
+          <a >	<CustomLink to="/about">About</CustomLink></a>
         </li>
       </ul>
-    </navbar>
+    </nav>
   );
 }
 

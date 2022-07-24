@@ -7,6 +7,7 @@ import { Bounce } from "react-awesome-reveal";
 import { useNavigate } from "react-router-dom";
 
 
+
 import Modal from 'react-modal'
 // import {FaPlus} from 'react-icons/fa'
 // import Socials from './Socials'
@@ -155,10 +156,12 @@ const closeModal = () => setModalIsOpen(false)
   return (
    
 <div>
+
       {/* <div class="streamer"> */}
         {/* <div class="pulse"></div> */}
         
         <div className="streamer">
+	
         <Fade
 							triggerOnce={true}
 							cascade={true}
@@ -168,8 +171,11 @@ const closeModal = () => setModalIsOpen(false)
 							fraction={0}
 							delay={500}
 						>
-        <div onClick={openModal} className='pulse'>
+						
+        <div onClick={openModal} className='pulse'>	
+		
         </div>
+		
         </Fade>
         </div>
       

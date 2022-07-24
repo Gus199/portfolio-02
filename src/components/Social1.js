@@ -1,5 +1,5 @@
 import React from 'react'
-import CustomLink from './CustomLink'
+// import CustomLink from './CustomLink'
 import {BsGithub} from 'react-icons/bs'
 import {AiFillFileText} from 'react-icons/ai'
 import {AiOutlineLinkedin } from 'react-icons/ai'
