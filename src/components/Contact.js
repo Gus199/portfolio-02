@@ -116,11 +116,11 @@ function Contact() {
 	};
 
 	return (
-		<div className="section-container">
+		// <div className="section-container">
 			<FadeUp triggerOnce duration={1000} fraction={0}>
-				<h1 className="section-title">
+				{/* <h1 className="section-title">
 					Want to collaborate, have an open role, or just want to get in touch?
-				</h1>
+				</h1> */}
 				<form className="contact-form" onSubmit={handleSubmit}>
 				<Fade
 										delay={200}
@@ -151,7 +151,7 @@ function Contact() {
 					<label>Email</label>
 					<input
 						className="underline-input"
-						placeholder="tech-person@tech.com"
+						placeholder="johnsmith@tech.com"
 						type="email"
 						onChange={handleEmailChange}
 						value={email}
@@ -159,7 +159,7 @@ function Contact() {
 					<label>Message</label>
 					<textarea
 						className="underline-input"
-						placeholder="let's make something cool together!"
+						placeholder="Your Message Here"
 						onChange={handleMessageChange}
 						value={message}
 					></textarea>
@@ -179,7 +179,7 @@ function Contact() {
 				<div className="contact-note-container"><p>(or just email me @ <span className="accent-orange-text">amaraitgherbi@gmail.com</span>)</p></div>
 				</Bounce>
 			</FadeUp>
-		</div>
+		// </div>
 	);
 }
 

@@ -9,7 +9,7 @@ function Work() {
 	const [isModal, setIsModal] = useState(false);
 
 	return (
-		<section className="section-3">
+		<section className="main-container">
 			<Modal isModal={isModal} setIsModal={setIsModal} />
 
 			<div className="section-container page-container">

@@ -8,6 +8,7 @@ function Modal({ isModal, resetModal, content }) {
 			timeout={500}
 			in={isModal}
 			unmountOnExit={true}
+			
 			classNames={"modal-animate"}
 		>
 			<div className="modal">

@@ -5,7 +5,11 @@ import React from 'react'
 function About() {
   return (
     
-    <div>about</div>
+<section className="main-container">
+<div className="section-container page-container">
+      About
+      </div>
+      </section>
   )
 }
 

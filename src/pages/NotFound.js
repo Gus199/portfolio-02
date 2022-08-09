@@ -1,6 +1,7 @@
 
 import {useEffect} from 'react'
 import {useNavigate} from 'react-router-dom'
+import Spinner from '../components/shared/Spinner'
 
 // markup
 const NotFound = () => {
@@ -13,10 +14,16 @@ const NotFound = () => {
     
   }, [navigate])
 	return (
-		<main className="not-found-container">
+		<div className='main-container' >
+		<main className='not-found'>
 			<h1> Sorry! This page does not exist.</h1>
-		
+			
 		</main>
+		<section>
+			<Spinner />
+		</section>
+
+		</div>
 		
 	);
 };
