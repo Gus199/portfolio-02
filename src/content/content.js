@@ -38,42 +38,54 @@ const projectData = [
 			{ img: "./images/daily2.png", idx: 1 },
 			{ img: "./images/daily3.png", idx: 2 },
 			{ img: "./images/daily3.png", idx: 3 },
-			{ img: "./images/amar.png", idx: 4 },
+			// { img: "./images/amar.png", idx: 4 },
 		],
 		featuredText1:
-			"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, whenI worked in a team of 3 to design and develop a full stack tool for managing secret santa gift exchanges.  Users are able to sign up or login, create or join a private group, and maintain an updated wishlist of gift ideas.  Once a group is ready, the leader is able to randomize the choosing of secret santas and each person’s wishlist is shared only with their secret santa.  We focused on user experience, automation, and mobile responsiveness.  I took on a leadership role in the team organizing planning sessions, constantly re-aligning on the status of features, and making sure our goals were going to be met.  ",
+			"Lorem Ipsum is simply dummy text ",
 		featuredText2:
 			"Coming Soon",
 	},
 	{
-		imgSrc: "./images/amar.png",
+		imgSrc: "./images/car-01.png",
 		alt: "daily news shotscreen",
-		title: "Foxphone",
+		title: "Carshowevents",
 		description:
-			"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, whenA tool for creating randomized Spotify playlists on the fly.  Utilizes Spotify API with implicit grant flow to access user's spotify playlists.",
+			"Lorem Ipsum is simply dummy text ",
 		stack: "Coming Soon ",
 		liveLink: "https://github.com/Gus199/car-show-events",
 		codeLink: "https://github.com/Gus199/car-show-events",
 		isFeatured: true,
 		featuredImgs: [
-			{ img: "./images/goinv-01.png", idx: 0 },
-			{ img: "./images/goinv-02.png", idx: 1 },
-			{ img: "./images/goinv-02.png", idx: 2 },
+			{ img: "./images/car-01.png", idx: 0 },
+			{ img: "./images/car-02.png", idx: 1 },
+			{ img: "./images/car-03.png", idx: 2 },
+			{ img: "./images/car-04.png", idx: 3 },
 		],
 		featuredText1:
-			"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, whenI designed and developed a web app for creating randomized playlists in Spotify through the Spotify API.  Users are able to scroll through their spotify playlists and choose which playlists to work with.  A slider appears to control how many songs from each playlist will be pulled into their new creation.  When the user is finished tweaking the sliders to their liking they are able to generate a new playlist which randomly chooses songs from each selection based on the slider values.  This new playlist is added to their official spotify account with the click of a button.",
+			"Lorem Ipsum is simply dummy text of the printing and typesetting ",
 		featuredText2:
 			"Coming Soon",
 	},
 	{
-		imgSrc: "./images/goroostr.png",
-		alt: "kabyFlex Screenshoot",
-		title: "KabyFlex",
+		imgSrc: "./images/ecom-01.png",
+		alt: "NextShop Screenshoot",
+		title: "NextShop",
 		description:
-			"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, whenock up a landing page within seconds without writing a single line of code. Incorporates Unsplash API for searching of quality images.",
+			"Lorem Ipsum is simply dummy text of the ",
 		stack: "Coming Soon ",
-		liveLink: "https://github.com/Gus199/car-show-events",
-		codeLink: "https://github.com/Gus199/car-show-events",
+		liveLink: "https://github.com/Gus199/next-ecommerce",
+		codeLink: "https://github.com/Gus199/next-ecommerce",
+		isFeatured: true,
+		featuredImgs: [
+			{ img: "./images/ecom-01.png", idx: 0 },
+			{ img: "./images/ecom-02.png", idx: 1 },
+			{ img: "./images/ecom-03.png", idx: 2 },
+			{ img: "./images/ecom-04.png", idx: 3 },
+		],
+		featuredText1:
+			"Lorem Ipsum is simply dummy text ",
+		featuredText2:
+			"Coming Soon",
 	},
 	// {
 	// 	imgSrc: "./images/goroostr.png",
