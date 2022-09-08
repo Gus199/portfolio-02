@@ -12,6 +12,14 @@
 	font-family: "poppins", arial;
 	color: white;
 }
+.line {
+    width:50%;
+
+    height: 4px;
+    background:#f5ba09;
+    margin: 10px auto;
+    border-radius: 5px;
+}
 
 a {
 	text-decoration: none;
@@ -58,7 +66,7 @@ body,
 .nav-item:first-child{
 	margin-right: auto;
 	margin-left: 2em;
-	color:#dca604;
+	color:#f5ba09;
 	/* background-color: #dca604; */
 }
 /* Social */
@@ -117,13 +125,14 @@ body,
 /* Social End Here */
 
 .socials-container-top {
-	width: 60%;
+	
+	width: 33%;
 	padding: 35px 0;
 	margin: auto;
 	display: flex;
-	/* align-items: center; */
+
 	justify-content: space-between;
-	/* border: #f5ba09 solid 1px; */
+
 	
 		
 	}
@@ -510,9 +519,9 @@ label {
 
 .contact-form {
 	
-	 width: 90%;
-	 margin: 0 auto; 
-}
+	/* width: 90%;
+	 margin: 0 auto;   */
+} 
 
 .input-submit {
 	background:#f5ba09;
@@ -666,8 +675,9 @@ label {
 
 .icon {
 	width: 30px;
-	/* background: none; */
-	/* fill: lightgray; */
+
+    
+	
 }
 
 .icon > path {
@@ -675,6 +685,7 @@ label {
 }
 
 .socials-container-top > a > .icon:hover > path {
+	width: 100px;
 	fill: #f5ba09;
 }
 
@@ -684,7 +695,11 @@ label {
 	justify-content: center;
 	height: 100vh;
 }
-
+@media screen and (max-width: 400px) {
+.socials-container-top {
+	width: 65%;
+}
+}
 
 @media screen and (min-width: 1150px) {
 	
@@ -740,13 +755,14 @@ label {
 	}
 
 	.bio-img {
-		border: #f5ba09 solid 1px;
-		border-radius:10px 100px / 120px;
+		border: #f5ba09 solid 2px;
+		/* border-radius:10px 100px / 120px; */
+		border-radius: 50%;
 		order: 2;
 		margin: 0;
 		align-self: center;
 		margin-left: auto;
-		max-width: 600px;
+		max-width: 500px;
 	}
 
 	.socials-container {
@@ -862,6 +878,7 @@ label {
 	  font-size: large;
 	  font-weight: bold;
 	  margin-left: 99%;
+	  margin-top: 1em;
 
   }
   .icons {

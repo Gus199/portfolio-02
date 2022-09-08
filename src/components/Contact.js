@@ -112,6 +112,7 @@ function Contact() {
 		setEmail("");
 		setMessage("");
 		navigate('/work')
+		// toast.success('Email sent')
 		
 	};
 
@@ -121,7 +122,9 @@ function Contact() {
 				{/* <h1 className="section-title">
 					Want to collaborate, have an open role, or just want to get in touch?
 				</h1> */}
+				{/* <ToastContainer /> */}
 				<form className="contact-form" onSubmit={handleSubmit}>
+					
 				<Fade
 										delay={200}
 										cascade={true}

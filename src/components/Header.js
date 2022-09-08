@@ -8,7 +8,7 @@ function Header() {
       <nav className="">
         <CustomLink to="/">Home</CustomLink>
         <CustomLink to="/work">Work</CustomLink>
-        <CustomLink to="/about">About</CustomLink>
+        {/* <CustomLink to="/about">About</CustomLink> */}
       </nav>
     </header>
   );

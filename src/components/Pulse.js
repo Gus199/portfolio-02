@@ -58,12 +58,12 @@ function Pulse() {
         contentLabel="Add Note"
         ariaHideApp={false}
       >
-        <h2>Add Note</h2>
+        {/* <h2>Add Note</h2> */}
 
         <button className="btn-close" onClick={closeModal}>
           X
         </button>
-		{/* <Footer /> */}
+	
         <Contact />
       </Modal>
     </div>
