@@ -23,28 +23,7 @@ const projectData = [
 		featuredText2:
 			"this application was build with Mongodb,Mongoose,Node, Express, Heroku,React,react-redux and @reduxjs/toolkit",
 	},
-	{
-		imgSrc: "./images/daily1.png",
-		alt: "daily news shotscreen",
-		title: "Daily News",
-		description:
-			"This application will alow you to subscribe and receive everyday news by ,User able to sign up login,and subscibe, and you will be receiving an email with a screenshot of the pages you were subscibed ",
-		stack: "Next, firebase(firebase/auth), framer-motion, HTML, CSS",
-		liveLink: "https://github.com/Gus199/car-show-events",
-		codeLink: "https://github.com/Gus199/car-show-events",
-		isFeatured: true,
-		featuredImgs: [
-			{ img: "./images/daily1.png", idx: 0 },
-			{ img: "./images/daily2.png", idx: 1 },
-			{ img: "./images/daily3.png", idx: 2 },
-			{ img: "./images/daily3.png", idx: 3 },
-			// { img: "./images/amar.png", idx: 4 },
-		],
-		featuredText1:
-			"Lorem Ipsum is simply dummy text ",
-		featuredText2:
-			"Coming Soon",
-	},
+	
 	{
 		imgSrc: "./images/ekabyle-01.png",
 		alt: "Event Succer Games",
@@ -89,6 +68,28 @@ const projectData = [
 		featuredText2:
 			"Coming Soon",
 	},
+	{
+		imgSrc: "./images/daily1.png",
+		alt: "daily news shotscreen",
+		title: "Daily News",
+		description:
+			"This application will alow you to subscribe and receive everyday news by ,User able to sign up login,and subscibe, and you will be receiving an email with a screenshot of the pages you were subscibed ",
+		stack: "Next, firebase(firebase/auth), framer-motion, HTML, CSS",
+		liveLink: "https://github.com/Gus199/car-show-events",
+		codeLink: "https://github.com/Gus199/car-show-events",
+		isFeatured: true,
+		featuredImgs: [
+			{ img: "./images/daily1.png", idx: 0 },
+			{ img: "./images/daily2.png", idx: 1 },
+			{ img: "./images/daily3.png", idx: 2 },
+			{ img: "./images/daily3.png", idx: 3 },
+			// { img: "./images/amar.png", idx: 4 },
+		],
+		featuredText1:
+			"Lorem Ipsum is simply dummy text ",
+		featuredText2:
+			"Coming Soon",
+	}
 	// {
 	// 	imgSrc: "./images/goroostr.png",
 	// 	alt: "kabyFlex Screenshoot",
