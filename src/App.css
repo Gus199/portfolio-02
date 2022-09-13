@@ -223,18 +223,35 @@ ul {
 }
 
 nav {
+
 	color: var(--dark-main);
 	display: flex;
 	margin: 0 auto;
 }
 
 nav a {
+	/* border: 2px solid #dca604; */
+	position: relative;
 	margin-right: 1em;
 	color: var(--dark-main);
 	text-transform: uppercase;
 	display: flex;
 	align-items: center;
 	font-weight: bold;
+}
+nav a::after{
+	content: '';
+	position: absolute;
+	bottom: -15px;
+	left: 50%;
+	width: 0%;
+	height: 3.5px;
+	background: #f5ba09;
+	transition: 0.4s ease-out;
+}
+nav a:hover::after{
+	left: 0;
+  width: 100%;
 }
 
 .main-header > h1 {
@@ -758,14 +775,12 @@ label {
 	}
 
 	.bio-img {
-		border: #f5ba09 solid 2px;
-		/* border-radius:10px 100px / 120px; */
 		border-radius: 50%;
 		order: 2;
 		margin: 0;
 		align-self: center;
 		margin-left: auto;
-		max-width: 500px;
+		/* max-width: 500px; */
 	}
 
 	.socials-container {
@@ -978,8 +993,9 @@ p {
 }
 
 .pulse::before {
-  content: "\f007";
-  font-family: "Font Awesome 5 Free";
+  content: "\f16d";
+  /* font-family: "Font Awesome 5 Free"; */
+  font-family: "Font Awesome 5 Brands"; content: "\f16d";
   font-weight: 500;
   font-size: 2em;
   background: #dca604;

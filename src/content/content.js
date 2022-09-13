@@ -5,7 +5,7 @@ const projectData = [
 		title: "GoInventory",
 		description:
 			"Manage your online store in one place, track product, adding new ones, update and add notes",
-		stack: "React, Mongo, Express, Node, GraphQL, Heroku, HTML",
+		stack: "React, Mongo, Express, Node, HTML, CSS",
 		liveLink: "https://goinventory3337.herokuapp.com/",
 		codeLink: "https://github.com/Gus199/new-go-inventory",
 		isFeatured: true,
@@ -29,8 +29,8 @@ const projectData = [
 		alt: "Event Succer Games",
 		title: "EvKabyle",
 		description:
-			"Lorem Ipsum is simply dummy text ",
-		stack: "Coming Soon ",
+			"Welcome to the home of Soccer Game Events, where you can find the latest Game soccer news and Location, tournament results, scoring highlights and much more ... ",
+		stack: "Next, Mongo, Express, Node,Redux, HTML ",
 		liveLink: "https://github.com/Gus199/e-kabysoccer",
 		codeLink: "https://github.com/Gus199/e-kabysoccer",
 		isFeatured: true,
@@ -43,7 +43,29 @@ const projectData = [
 			{ img: "./images/ekabyle-06.png", idx: 6 },
 		],
 		featuredText1:
-			"Lorem Ipsum is simply dummy text of the printing and typesetting ",
+			"This web application will to findnd locate a soccer game event ",
+		featuredText2:
+			"Coming Soon",
+	},
+	{
+		imgSrc: "./images/daily1.png",
+		alt: "daily news shotscreen",
+		title: "Daily News",
+		description:
+			"This application will alow you to subscribe and receive everyday news ,User able to sign up login,and subscibe, and you will be receiving an email with a screenshot of the pages you were subscibed ",
+		stack: "Next, firebase(firebase/auth), framer-motion, HTML, CSS",
+		liveLink: "https://github.com/Gus199/car-show-events",
+		codeLink: "https://github.com/Gus199/car-show-events",
+		isFeatured: true,
+		featuredImgs: [
+			{ img: "./images/daily1.png", idx: 0 },
+			{ img: "./images/daily2.png", idx: 1 },
+			{ img: "./images/daily3.png", idx: 2 },
+			{ img: "./images/daily3.png", idx: 3 },
+			
+		],
+		featuredText1:
+			"Lorem Ipsum is simply dummy text ",
 		featuredText2:
 			"Coming Soon",
 	},
@@ -68,48 +90,9 @@ const projectData = [
 		featuredText2:
 			"Coming Soon",
 	},
-	{
-		imgSrc: "./images/daily1.png",
-		alt: "daily news shotscreen",
-		title: "Daily News",
-		description:
-			"This application will alow you to subscribe and receive everyday news by ,User able to sign up login,and subscibe, and you will be receiving an email with a screenshot of the pages you were subscibed ",
-		stack: "Next, firebase(firebase/auth), framer-motion, HTML, CSS",
-		liveLink: "https://github.com/Gus199/car-show-events",
-		codeLink: "https://github.com/Gus199/car-show-events",
-		isFeatured: true,
-		featuredImgs: [
-			{ img: "./images/daily1.png", idx: 0 },
-			{ img: "./images/daily2.png", idx: 1 },
-			{ img: "./images/daily3.png", idx: 2 },
-			{ img: "./images/daily3.png", idx: 3 },
-			// { img: "./images/amar.png", idx: 4 },
-		],
-		featuredText1:
-			"Lorem Ipsum is simply dummy text ",
-		featuredText2:
-			"Coming Soon",
-	}
-	// {
-	// 	imgSrc: "./images/goroostr.png",
-	// 	alt: "kabyFlex Screenshoot",
-	// 	title: "KabyFlex",
-	// 	description:
-	// 		"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, whenock up a landing page within seconds without writing a single line of code. Incorporates Unsplash API for searching of quality images.",
-	// 	stack: "Javascript, HTML, CSS",
-	// 	liveLink: "https://github.com/Gus199/car-show-events",
-	// 	codeLink: "https://github.com/Gus199/car-show-events",
-	// },
-	// {
-	// 	imgSrc: "./images/goroostr.png",
-	// 	alt: "kabyFlex Screenshoot",
-	// 	title: "KabyFlex",
-	// 	description:
-	// 		"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, whenoLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, whenck up a landing page within seconds without writing a single line of code. Incorporates Unsplash API for searching of quality images.",
-	// 	stack: "Coming Soon ",
-	// 	liveLink: "https://github.com/Gus199/car-show-events",
-	// 	codeLink: "https://github.com/Gus199/car-show-events",
-	// },
+	
+	
+	
 	
 	
 ];

@@ -51,7 +51,7 @@ const Home = () => {
             <div className="bio-with-image">
               <img
                 className="bio-img"
-                src="./images/amar.png"
+                src="./images/amar1.png"
                 alt="Amar @GoRoostr"
               />
               <p className="bio">
