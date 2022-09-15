@@ -715,7 +715,7 @@ label {
 	justify-content: center;
 	height: 100vh;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 414px) {
 .socials-container-top {
 	width: 65%;
 }
