@@ -38,7 +38,7 @@ const Home = () => {
               <div className="line"></div>
             </h1>
 
-            <h2 className="sub-title">Full Stack developer
+            <h2 className="sub-title">Full Stack Developer  
             
             </h2>
             
@@ -51,7 +51,7 @@ const Home = () => {
             <div className="bio-with-image">
               <img
                 className="bio-img"
-                src="./images/amar1.png"
+                src="./images/amar2.png"
                 alt="Amar @GoRoostr"
               />
               <p className="bio">
@@ -125,20 +125,22 @@ const Home = () => {
                     duration={500}
                     fraction={0}
                   >
-                    <li className="pill">HTML</li>
-                    <li className="pill">CSS</li>
-                    <li className="pill">Javascript</li>
-                    <li className="pill">React</li>
-                    <li className="pill">React Router</li>
-                    <li className="pill">react-redux</li>
-                    <li className="pill">Nextjs</li>
-                    <li className="pill">strapi</li>
-                    <li className="pill">NodeJS</li>
+                    <li className="pill">HTML5</li>
+                    <li className="pill">CSS3</li>
+                    <li className="pill">Javascript ES6+</li>
+                    <li className="pill"> jQuery</li>
+                    <li className="pill">React.JS</li>
+                    <li className="pill">Next.JS</li>
+                    <li className="pill">Redux.js</li>
+                    <li className="pill">Redux-Toolkit</li>
+                    <li className="pill">Node.JS</li>
+                    <li className="pill">Express.JS</li>
                     <li className="pill">MongoDB</li>
-                    <li className="pill">Heroku</li>
-                    <li className="pill">Express</li>
-                    <li className="pill">redux.js</li>
-                    <li className="pill">@reduxjs/toolkit</li>
+                    <li className="pill">MySQL</li>
+                    <li className="pill">Apollo</li>
+                    <li className="pill">GraphQL</li>
+                    <li className="pill">Git</li>
+                    <li className="pill">RESTful API</li>
                   </Fade>
                 </ul>
               </div>

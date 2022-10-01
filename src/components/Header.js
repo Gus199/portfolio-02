@@ -8,6 +8,7 @@ function Header() {
       <nav className="">
         <CustomLink to="/">Home</CustomLink>
         <CustomLink to="/work">Work</CustomLink>
+        {/* <button className="btn-them">ON\OFF</button> */}
         {/* <CustomLink to="/about">About</CustomLink> */}
       </nav>
     </header>

@@ -1,9 +1,5 @@
 import React, { useState } from "react";
-// import emailjs from "@emailjs/browser";
-// import FadeUp from "../animations/FadeUp";
-// import { toast } from "react-toastify";
 import { Fade } from "react-awesome-reveal";
-// import { Bounce } from "react-awesome-reveal";
 // import { useNavigate } from "react-router-dom";
 import Contact from "./Contact";
 // import Footer from "./Footer";
@@ -11,6 +7,7 @@ import Contact from "./Contact";
 import Modal from "react-modal";
 
 const customStyles = {
+  
   content: {
     //   display: 'flex',
     justifyContent: "center",
@@ -25,7 +22,9 @@ const customStyles = {
     borderRadius: "25px",
     position: "relative",
     height: "550px",
+    
   },
+ 
 };
 
 function Pulse() {
@@ -43,14 +42,14 @@ function Pulse() {
           cascade={true}
           damping={0.1}
           direction="up"
-          duration={1000}
+          duration={500}
           fraction={0}
           delay={500}
         >
           <div onClick={openModal} className="pulse"></div>
         </Fade>
       </div>
-
+     
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
@@ -66,6 +65,8 @@ function Pulse() {
 	
         <Contact />
       </Modal>
+   
+     
     </div>
   );
 }
