@@ -8,6 +8,7 @@ import ModalProvider from "./contexts/ModalContext";
 import ScrollToTop from "./components/ScrollToTop";
 import WidthProvider from "./contexts/WidthContext";
 
+
 ReactDOM.render(
 	<BrowserRouter>
 		<ScrollToTop />

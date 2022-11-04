@@ -16,6 +16,7 @@ function Work() {
 				<FadeUp duration={1000} triggerOnce={true} fraction={0}>
 					<h1 className="section-title work-section-title">
 						A showcase of what I can do
+						<div className="line"></div>
 					</h1>
 				</FadeUp>
 				<ul className="project-list">

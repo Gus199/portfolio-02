@@ -4,7 +4,7 @@ function Socials() {
 	return (
 		<div className="socials-container-top">
 			<a
-				href="https://www.linkedin.com/in/amar-ait-gherbi-203a9821a"
+				href="https://www.linkedin.com/in/amar-aitgherbi/"
 				target="_blank"
 				rel="noreferrer"
 			>

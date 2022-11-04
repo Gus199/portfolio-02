@@ -12,19 +12,23 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import PulsFoter from "./components/PulsFoter";
 
+
+
+
 function App() {
   const { isModal, resetModal, modalContent } = useModalContext();
 
   return (
-   
-   <div className="App"> 
+    <div className="App">
       <Modal
         isModal={isModal}
         resetModal={resetModal}
         content={modalContent}
         ariaHideApp={false}
       />
+  
       <Header />
+   
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -36,8 +40,7 @@ function App() {
       <Footer />
       <PulsFoter />
       <ToastContainer />
-   </div>
-   
+    </div>
   );
 }
 
