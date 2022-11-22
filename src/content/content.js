@@ -1,20 +1,21 @@
 const projectData = [
 
 	{
-		imgSrc: "./images/goinv-01.png",
+		imgSrc: "./images/goinv1.png",
 		alt: "STORE_IT",
 		title: "STOREIT",
 		description:
 			"Manage your online store in one place, track product, adding new ones, update and add notes",
 		stack: "React, MongoDB, Mongoose, Express, Node, Redux",
 		liveLink: "https://goinventory3337.herokuapp.com/",
-		codeLink: "https://github.com/Gus199/new-go-inventory",
+		codeLink: "https://github.com/Gus199/newinventory",
 		isFeatured: true,
 		featuredImgs: [
-			{ img: "./images/goinv-01.png", idx: 0 },
-			{ img: "./images/goinv-02.png", idx: 1 },
-			{ img: "./images/goinv-03.png", idx: 2 },
-			{ img: "./images/goinv-04.png", idx: 3 },
+			{ img: "./images/goinv2.png", idx: 0 },
+			{ img: "./images/goinv1.png", idx: 1 },
+			{ img: "./images/goinv4.png", idx: 3 },
+			{ img: "./images/goinv3.png", idx: 2 },
+			{ img: "./images/goinv4.png", idx: 4},
 			
 
 

@@ -4,9 +4,11 @@ import FadeUp from '../animations/FadeUp';
 import { Fade } from 'react-awesome-reveal';
 import projectData from '../content/content.js';
 import Project from '../components/Project';
-// import Contact from "../components/Contact";
+
 import Socials from '../components/Socials';
 import CustomLink from '../components/CustomLink';
+import ThemeButton from '../components/ThemeButton';
+
 
 // import ContactUs from "../components/ContactUs";
 // import ContactUs from "../components/ContactUs";
@@ -14,6 +16,11 @@ import CustomLink from '../components/CustomLink';
 // import Social1 from "../components/Social1";
 
 const Home = () => {
+ 
+ 
+
+  
+  
   const [featuredProjects] = useState([
     projectData[0],
     projectData[1],
@@ -21,11 +28,12 @@ const Home = () => {
   ]);
 
   return (
-    <div className='main-container'>
+    <div className='main-container'  >
+      <ThemeButton  />
       {/* <ContactUs className="us" /> */}
-
+     
       <div className='inner-container'>
-        {/* <section className="section-1"> */}
+     
         <div className='section-container'>
           <FadeUp
             duration={1000}

@@ -1,7 +1,7 @@
 import React from "react";
 import { useModalContext } from "../contexts/ModalContext";
-
 import FeaturedContent from "./FeaturedContent";
+
 
 function Project({
 	imgSrc,
